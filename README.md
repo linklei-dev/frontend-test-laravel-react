@@ -79,7 +79,7 @@ Recursos adicionais **não obrigatórios** que podem agregar valor ao seu teste.
 - Criar um ambiente em docker para executar a aplicação e o banco de dados;
 - Melhores práticas e uso dos padrões de código aceitos pela comunidade Laravel/PHP/React;
 - Recomendamos a utilização do framework front-end [React Bootstrap](https://react-bootstrap.github.io/), para facilitar a utlização de componentes React;
-- Seja criativo! Recursos adicionais como melhorias no designe, novos componentes ou ferramentas também agregam ao seu teste.
+- Seja criativo! Recursos adicionais como melhorias no design, novos componentes ou ferramentas também agregam ao seu teste.
 
 -----------------
 
