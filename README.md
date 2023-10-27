@@ -9,39 +9,46 @@
 - Leia todo este arquivo README.md para entender o teste;
 - Inicie um novo repositório público em sua conta no github;
 - Para o back-end utilize:
-  - [PHP 7.2+](http://php.net/);
-  - [MySQL 5.6+](https://www.mysql.com/);
+  - [PHP 8.2+](http://php.net/);
+  - [MySQL 8+](https://www.mysql.com/);
   - Framework [Laravel](https://laravel.com/), [versão 8](https://laravel.com/docs/8.x);
 - Para o front-end utilize:
-  - [React JS v17+](https://pt-br.reactjs.org/);
+  - [React JS 17.0.2](https://pt-br.reactjs.org/); **especificamente a versão 17.0.2**
 - Você pode desenvolver o front-end integrado ao Laravel, através dos seguintes recursos:
   - [Compilação JS do Laravel](https://laravel.com/docs/8.x/mix#react) (recomendado)
   - OU
   - [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app);
   - Lembre apenas de manter as duas aplicações no mesmo repositório para facilitar análise do teste;
-- Realize as comunicações entre Front e Back desenvolvendo uma API JSON minimalista dentro do Laravel;
+- Realize as comunicações entre Front e Back desenvolvendo uma API JSON minimalista em Laravel;
 - Não há necessidade de desenvolver recursos de Autenticação, Login, ou quaisquer sistemas de segurança;
 - **O objetivo principal é desenvolver um feed simples de rede social;**
-- Busque criar um código bem estruturado, seguindo um padrão e as melhores práticas da comunidade. Sinta-se livre para acrescentar comentários, lembretes, anotações no meio do código, etc. Em um ambiente de desenvolvimento corporativo é fundamental que a equipe compreenda todos os códigos desenvolvidos;
+- Busque criar um código bem estruturado, seguindo um padrão e as melhores práticas da comunidade. Sinta-se livre para acrescentar comentários, lembretes e anotações diversas no código.
+- Consideramos positivo um código bem comentado;
+- Em um ambiente de desenvolvimento corporativo é fundamental que a equipe compreenda todos os códigos desenvolvidos;
 - Após finalizar, publique no repositório do seu projeto um arquivo completo com o SQL do seu banco utilizado (dump do banco);
 - Não é necessário publicar o projeto em algum servidor.
-- Insira no seu `README.md` todas as instruções / documentação necessária para executarmos localmente seu projeto para avaliação;
-- Você pode basear o visual da sua aplicação no visual do Feed do [LinkLei](https://linklei.com.br/), basta cadastrar-se no sistema, efetuar login e navegar.
-- Desenvolva o front-end o mais próximo possível das imagens de modelo em anexo disponibilizadas aqui.
+- Insira no seu `README.md` todas as instruções ou documentações necessárias para executarmos localmente seu projeto para avaliação;
+- Você pode basear o visual da aplicação de seu teste no visual do [LinkLei](https://linklei.com.br/), basta cadastrar-se no sistema, efetuar login e navegar.
+- Utilize como base de design o mockup nas imagens abaixo.
 - Ao finalizar o teste responda à mesma conversa de email onde enviamos o link do desafio. Inclua na sua resposta o link do seu repositório no github.
-- Todos os recursos gráficos como imagens e ícones, estão disponíveis no diretório [graphics](https://github.com/linklei-dev/fullstack-test-laravel/tree/main/graphics);
-- Desenvolva de forma responsiva, para que toda a aplicação seja bem visualizada e funcional em diferentes dispositivos mobile, smartphones, tablets e desktops.
+- Utilize sua criatividade e experiência no desenvolvimento de um designe bonito, elegante e principalmente funcional;
+- Lembre de criar um layout **responsivo**, proporcionando uma boa experiência para os usuários em diferentes dispositivos mobile, smartphones, tablets e desktops;
+- **Valorizamos a aplicação de boas práticas em UX;**
+- Considere utilizar bibliotecas de ícones e componentes npm para demonstrar sua experiência e maximizar os recursos de desenvolvimento;
 - Utilize o padrão de fonte 'Lato', como no exemplo abaixo:
 ```css
 font-family: Lato,'Source Sans Pro';
 ```
 
+## A aplicação:
+- Desenvolva uma aplicação simples de feed de publicações, similar ao feed de uma rede social (facebook, linkedin...);
+
 ## Requisitos funcionais da aplicação:
 
-
 ### Criar post
-- O botão **Criar Post** deve abrir a modal para cadastro de post.<br>
-![Modal Criar Post](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/modal_create_post.png?raw=true)
+- O botão **Criar Post** deve abrir a modal para cadastro de post.
+- Mockup referêncial:
+![Modal Criar Post]()
 
 ### Dentro da Modal:
   - campo **autor do post**: preenchimento obrigatório, campo tipo texto, deve receber o nome do usuário que está publicando.
@@ -49,16 +56,17 @@ font-family: Lato,'Source Sans Pro';
     - Post
     - Artigo
     - Grupo
-  - Campo **Escrever publicação**: obrigatório, deve ser do tipo textarea, permitindo multiplas linhas de texto. Utilize um componente que faça o campo crescer verticalmente quando acrescentadas mais linhas de texto. 
-  - Botão **imagem**: preenchimento opcional, deve permitir inserir uma imagem no post. Deve aceitar somente imagens no formato jpg ou png.
-  - Botão **publicar** envia todo o conteúdo da criação do post para a API, salvando a categoria, texto e imagem na respectiva tabela do post.
+  - Campo **Escrever publicação**: obrigatório, deve ser do tipo texto com elmentos pra formatação, permitindo multiplas linhas de texto. Utilize um componente que faça o campo crescer verticalmente quando acrescentadas mais linhas de texto. Recomendamos componentes como QuillJS, TinyMCE, DraftJS... 
+  - Permitir inserir imagens na publicação. Deve aceitar somente imagens no formato jpg ou png;
+  - Botão **publicar** envia todo o conteúdo da criação do post para a API, salvando a categoria e texto na respectiva tabela do post;
+  - Caso existam imagens no campo texto, elas devem ser enviadas para a aplicação e salvas em um diretório local;
   - Após enviar o conteúdo do post, a modal deve ser fechada automaticamente.
   - Realize as validações necessárias, exibindo mensagens de erro quando algum campo não estiver preenchido ou for inválido. Use sua sabedoria para decidir como, onde e quando exibir estas mensagens de erro/validações.
   - Não há necessidade e validar o tamanho da imagem quando enviada.
 
   ### Navegação no feed.
-  - O front-end do feed deve estar de acordo com o modelo abaixo;
-  ![template_feed](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/template_feed.png?raw=true)
+  - Mockup referencial do feed:
+  ![template_feed]()
 
   - O feed deve exibir todos os posts criados, em ordem Decrescente (primeiro o post mais recente).
   - A imagem do usuário deve ser o [avatar_default](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/avatar_default.png?raw=true);
@@ -71,14 +79,16 @@ font-family: Lato,'Source Sans Pro';
   - Estas funções devem estar em um menu suspenço (estilo dropdown), no canto superior direito do post no feed, como um botão, seguindo o modelo na imagem abaixo.
     - Editar: exiba o conteúdo do post na mesma modal utilizada na ação de Criar;
     - Deletar: solicite uma confirmação de deleção ao usuário antes de remover o post;
-  ![Edit Delete Post](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/edit_delete_post.png?raw=true)
+  - Caso o post tenha mais de uma imagem, no modo reduzido (sem ter clicado em ler mais) deve ser exibido apenas a primeira imagem encontrada no texto do post como imagem em destaque.
 
+### Framework React Bootstrap:
+- Utilize o framework front-end [React Bootstrap](https://react-bootstrap.github.io/);
+- Requisito obrigatório para avaliação de suas habilidades ao utilizar um robusto framework de componentes front-end;
 
 ## Diferenciais:
 Recursos adicionais **não obrigatórios** que podem agregar valor ao seu teste.
 - Criar um ambiente em docker para executar a aplicação e o banco de dados;
 - Melhores práticas e uso dos padrões de código aceitos pela comunidade Laravel/PHP/React;
-- Recomendamos a utilização do framework front-end [React Bootstrap](https://react-bootstrap.github.io/), para facilitar a utlização de componentes React;
 - Seja criativo! Recursos adicionais como melhorias no design, novos componentes ou ferramentas também agregam ao seu teste.
 
 -----------------
