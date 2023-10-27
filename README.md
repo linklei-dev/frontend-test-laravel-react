@@ -48,7 +48,7 @@ font-family: Lato,'Source Sans Pro';
 ### Criar post
 - O botão **Criar Post** deve abrir a modal para cadastro de post.
 - Mockup referêncial:
-![Modal Criar Post]()
+![Modal Criar Post](https://github.com/linklei-dev/frontend-test-laravel-react/blob/main/graphics/mockup_modal_create.png?raw=true)
 
 ### Dentro da Modal:
   - campo **autor do post**: preenchimento obrigatório, campo tipo texto, deve receber o nome do usuário que está publicando.
@@ -66,15 +66,13 @@ font-family: Lato,'Source Sans Pro';
 
   ### Navegação no feed.
   - Mockup referencial do feed:
-  ![template_feed]()
+  ![template_feed](https://github.com/linklei-dev/frontend-test-laravel-react/blob/main/graphics/mockup_feed.png?raw=true)
 
   - O feed deve exibir todos os posts criados, em ordem Decrescente (primeiro o post mais recente).
   - A imagem do usuário deve ser o [avatar_default](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/avatar_default.png?raw=true);
   - Limite a exibição do texto do post para no máximo 500 caracteres, caso exceda este limite, exiba o link "Leia mais..." que ao ser clicado deve expandir a caixa e exibir por inteiro o texto do post. Caso o limite não seja excedido, não exibir o "Leia mais...".
   - Utilize recursos de rolagem infinita, para carregar mais posts quando a rolagem do usuário chegar no fim da página.
   - Siga as boas práticas de desenvolvimento React, procure utilizar componentes disponíveis em comunidades open source (como npm), repositórios no github, etc.
-  - Demais instruções na imagem:
-  ![Feed Details](https://github.com/linklei-dev/fullstack-test-laravel/blob/main/graphics/feed_detail.png?raw=true)
   - Cria recursos para **Deletar** e **Editar** o post.
   - Estas funções devem estar em um menu suspenço (estilo dropdown), no canto superior direito do post no feed, como um botão, seguindo o modelo na imagem abaixo.
     - Editar: exiba o conteúdo do post na mesma modal utilizada na ação de Criar;
@@ -96,3 +94,4 @@ Recursos adicionais **não obrigatórios** que podem agregar valor ao seu teste.
 **Bom trabalho ;)**
 
 -----------------
+
