@@ -28,6 +28,8 @@
 - Após finalizar, publique no repositório do seu projeto um arquivo completo com o SQL do seu banco utilizado (dump do banco);
 - Não é necessário publicar o projeto em algum servidor.
 - Insira no seu `README.md` todas as instruções ou documentações necessárias para executarmos localmente seu projeto para avaliação;
+  - Lembre de incluir quaisquer instruções necessárias para a execução do ambiente, como versões das dependências, em especial do PHP, Lavarel, Node, React e MySQL.
+  - Detalhe também as versões de pacotes externos utilizados em node.
 - Utilize como base de design o mockup nas imagens abaixo.
 - Ao finalizar o teste responda à mesma conversa de email onde enviamos o link do desafio. Inclua na sua resposta o link do seu repositório no github.
 - Utilize sua criatividade e experiência no desenvolvimento de um designe bonito, elegante e principalmente funcional;
