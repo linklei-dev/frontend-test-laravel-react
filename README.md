@@ -13,11 +13,11 @@
   - [MySQL 8+](https://www.mysql.com/);
   - Framework [Laravel](https://laravel.com/), [versão 8](https://laravel.com/docs/8.x);
 - Para o front-end utilize:
-  - [React JS 17.0.2](https://pt-br.reactjs.org/); **especificamente a versão 17.0.2**
+  - [React JS 17](https://pt-br.reactjs.org/) ou mais recente;
 - Você pode desenvolver o front-end integrado ao Laravel, através dos seguintes recursos:
   - [Compilação JS do Laravel](https://laravel.com/docs/8.x/mix#react) (recomendado)
   - OU
-  - [Create React App](https://pt-br.reactjs.org/docs/create-a-new-react-app.html#create-react-app);
+  - criando uma nova aplicação react somente para o front [aqui](https://react.dev/learn/creating-a-react-app).
   - Lembre apenas de manter as duas aplicações no mesmo repositório para facilitar análise do teste;
 - Realize as comunicações entre Front e Back desenvolvendo uma API JSON minimalista em Laravel;
 - Não há necessidade de desenvolver recursos de Autenticação, Login, ou quaisquer sistemas de segurança;
